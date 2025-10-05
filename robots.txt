@@ -1,0 +1,14 @@
+# robots.txt - توابل وأعشاب وعطارة سيد شعلان الحيالي
+# يُشير إلى محركات البحث لتبدأ بالزحف من هذا الموقع
+
+# السماح لجميع محركات البحث بالوصول إلى كل الموقع:
+User-agent: *
+Allow: /
+
+# تحديد مسار ملف Sitemap XML (يجب إنشاؤه لاحقًا)
+# افترض أن اسم مستودعك هو 'Sayed-Shaalan' على حساب GitHub الخاص بك
+# https://github.com/vbhbv/Sayed-Shalaan
+Sitemap: https://vbhrv.github.io/Sayed-Shaalan/sitemap.xml
+
+# صفحات قد تحتاج لحظرها (عادةً لا نحتاج في المواقع الثابتة البسيطة)
+# Disallow: /contact.html?success=true
