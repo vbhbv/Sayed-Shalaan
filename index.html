@@ -3,82 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>توابل وأعشاب وعطارة سيد شعلان الحيالي - نكهة الأصالة</title>
-    <meta name="description" content="متجر سيد شعلان الحيالي لبيع أجود أنواع التوابل والأعشاب والعطارة الفاخرة. اكتشف نكهة الأصالة والجودة العالية في منتجاتنا.">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/images/favicon.ico">
-    </head>
-<body>
-    <header>
-        <div class="logo">
-            <a href="index.html">توابل شعلان</a>
+    <title>سيد شعلان الحيالي - عطرية الأصالة العراقية | Tawabel Alhayali</title>
+    <meta name="description" content="أجود التوابل والأعشاب العراقية الفاخرة. خبرة أجيال في الجودة والنقاء. متجر سيد شعلان الحيالي.">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/modules/header.css">
+    <link rel="stylesheet" href="assets/css/modules/hero.css">
+</head>
+<body id="top">
+
+    <header class="site-header" role="banner">
+        <div class="header-content container">
+            <a href="index.html" class="logo-link" aria-label="الصفحة الرئيسية لمتجر سيد شعلان الحيالي">
+                <i class="fas fa-seedling logo-icon" aria-hidden="true"></i>
+                <span class="site-title">سيد شعلان الحيالي</span>
+            </a>
+            <nav class="main-nav" id="site-navigation" aria-label="التنقل الرئيسي للموقع">
+                <ul>
+                    <li><a href="index.html" class="nav-item current-page">الرئيسية</a></li>
+                    <li><a href="products.html" class="nav-item">الكتالوج</a></li>
+                    <li><a href="#heritage" class="nav-item">إرثنا العراقي</a></li>
+                    <li><a href="contact.html" class="nav-item">تواصل</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="تبديل وضع الليل/النهار"><i class="fas fa-sun"></i></button>
+                <button class="icon-btn cart-btn" aria-label="سلة التسوق" data-cart-count="0"><i class="fas fa-shopping-bag"></i></button>
+                <button class="menu-toggle icon-btn" id="menu-toggle" aria-controls="site-navigation" aria-expanded="false" aria-label="قائمة التنقل"><i class="fas fa-bars"></i></button>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">الرئيسية</a></li>
-                <li><a href="products.html">منتجاتنا</a></li>
-                <li><a href="about.html">قصتنا</a></li>
-                <li><a href="contact.html">اتصل بنا</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>أهلاً بك في عالم النكهة الأصيلة</h1>
-            <p>سيد شعلان الحيالي - خبرة أجيال في التوابل والأعشاب والعطارة.</p>
-            <a href="products.html" class="cta-button">تصفح المنتجات الآن</a>
-        </section>
-
-        <section class="features">
-            <h2>لماذا تختار توابل سيد شعلان؟</h2>
-            <div class="feature-grid">
-                <div>
-                    <img src="assets/images/icon-quality.png" alt="جودة">
-                    <h3>جودة مضمونة</h3>
-                    <p>أفضل مصادر التوابل في العالم.</p>
-                </div>
-                <div>
-                    <img src="assets/images/icon-fresh.png" alt="طازج">
-                    <h3>طحن فوري</h3>
-                    <p>نطحن التوابل عند الطلب للحفاظ على النكهة.</p>
-                </div>
-                <div>
-                    <img src="assets/images/icon-delivery.png" alt="توصيل">
-                    <h3>توصيل سريع</h3>
-                    <p>خدمة توصيل تغطي جميع المدن.</p>
-                </div>
+    <main id="main-content" role="main">
+        <section class="hero-section" role="region" aria-label="التعريف بالمتجر">
+            <div class="hero-content container">
+                <p class="hero-subtitle">من أسواق بغداد القديمة</p>
+                <h1 class="hero-title">توابل سيد شعلان: حيث تلتقي الأصالة بالجودة العالمية</h1>
+                <p class="hero-description">نكهات نقية وعضوية، مطحونة بحب لترتقي بمطبخك.</p>
+                <a href="products.html" class="cta-button primary-btn" role="button">تسوق الآن <i class="fas fa-arrow-left"></i></a>
             </div>
         </section>
 
-        <section class="top-products">
-            <h2>الأكثر مبيعاً</h2>
-            <div class="product-card-container">
-                <div class="product-card">
-                    <img src="assets/images/product-saffron.jpg" alt="الزعفران الأصلي">
-                    <h3>الزعفران الإيراني</h3>
-                    <p>خيوط ذهبية تضفي لوناً وطعماً لا يُنسى.</p>
-                    <a href="products.html#saffron" class="product-link">عرض التفاصيل</a>
-                </div>
-                <div class="product-card">
-                    <img src="assets/images/product-cardamom.jpg" alt="الهيل الأخضر">
-                    <h3>الهيل الأخضر الفاخر</h3>
-                    <p>رائحة عطرية مميزة لجودة قهوتك.</p>
-                    <a href="products.html#cardamom" class="product-link">عرض التفاصيل</a>
-                </div>
+        <section id="heritage" class="heritage-section container" role="region" aria-labelledby="heritage-title">
+            <h2 id="heritage-title" class="section-title">إرث من النكهة... أصالة سيد شعلان</h2>
+            <div class="heritage-grid">
+                <article class="heritage-card">
+                    <i class="fas fa-splotch icon-lg" aria-hidden="true"></i>
+                    <h3>نقاوة التوابل 100%</h3>
+                    <p>نختار التوابل الخام من أفضل المصادر، لضمان النقاء العضوي والزيوت العطرية الكاملة.</p>
+                </article>
+                <article class="heritage-card">
+                    <i class="fas fa-mortar-pestle icon-lg" aria-hidden="true"></i>
+                    <h3>الطحن لحظة الطلب</h3>
+                    <p>نطحن التوابل عند تجهيز طلبك لضمان وصول النكهة العطرية والحدة بكامل قوتها إليك.</p>
+                </article>
+                <article class="heritage-card">
+                    <i class="fas fa-globe-africa icon-lg" aria-hidden="true"></i>
+                    <h3>جودة عالمية بأياد عراقية</h3>
+                    <p>معايير عالمية في التخزين والتعبئة، مع الحفاظ على روح الضيافة والكرم العراقي.</p>
+                </article>
+            </div>
+        </section>
+        
+        <section class="featured-products container" role="region" aria-labelledby="products-title">
+            <h2 id="products-title" class="section-title">منتجاتنا الأكثر طلباً</h2>
+            <div class="product-cards-container">
+                <article class="product-card" data-product-id="001">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/1565102291813450783_1" alt="هيل أخضر فاخر" loading="lazy">
+                    <div class="card-details">
+                        <h3 class="product-name">الهيل الأخضر الفاخر</h3>
+                        <p class="product-excerpt">ملك التوابل، مثالي للقهوة العربية الأصيلة.</p>
+                        <span class="product-price" data-price="25000">25,000 د.ع</span>
+                        <a href="products.html#001" class="details-link" aria-label="تفاصيل وشراء الهيل الأخضر الفاخر">شراء وتفاصيل <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="product-card" data-product-id="002">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/1565102291813450783_2" alt="فلفل أسود حب" loading="lazy">
+                    <div class="card-details">
+                        <h3 class="product-name">فلفل أسود (حب كامل)</h3>
+                        <p class="product-excerpt">حدة رائعة ونكهة ترفع من مستوى طبقك الرئيسي.</p>
+                        <span class="product-price" data-price="10000">10,000 د.ع</span>
+                        <a href="products.html#002" class="details-link" aria-label="تفاصيل وشراء الفلفل الأسود">شراء وتفاصيل <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="center-text">
+                <a href="products.html" class="cta-button secondary-btn" role="button">استكشف الكتالوج الكامل</a>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 توابل وأعشاب وعطارة سيد شعلان الحيالي. جميع الحقوق محفوظة.</p>
-        <div class="social-links">
-            <a href="#" target="_blank">فيسبوك</a> |
-            <a href="#" target="_blank">إنستجرام</a> |
-            <a href="contact.html">تواصل معنا</a>
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-grid container">
+            <div class="footer-column">
+                <h4>عن سيد شعلان</h4>
+                <p>إرث من الجودة والنكهة الأصيلة. تأسس المتجر لخدمة ذوقكم الرفيع.</p>
+            </div>
+            <div class="footer-column">
+                <h4>خدمة العملاء</h4>
+                <ul>
+                    <li><a href="#" class="footer-link">سياسة التوصيل</a></li>
+                    <li><a href="#" class="footer-link">الأسئلة الشائعة</a></li>
+                    <li><a href="contact.html" class="footer-link">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-column contact-info">
+                <h4>تواصل معنا</h4>
+                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> بغداد، شارع الكفاح - متجر 110</p>
+                <p><i class="fab fa-whatsapp" aria-hidden="true"></i> +964 770 XXX XXXX</p>
+                <div class="social-icons" role="group" aria-label="روابط التواصل الاجتماعي">
+                    <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 سيد شعلان الحيالي. جميع الحقوق محفوظة.</p>
         </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/utils.js" defer></script>
 </body>
 </html>
